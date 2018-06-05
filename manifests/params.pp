@@ -128,7 +128,7 @@ class ssh::params {
           case versioncmp($::kernelrelease, '5.10') {
             1: {
               # Solaris 11 and later
-              $server_package_name = '/service/network/ssh'
+              $server_package_name = '/service/network/ssh-common'
               $client_package_name = '/network/ssh'
             }
             0: {
